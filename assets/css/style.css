@@ -448,9 +448,45 @@ p {
   color: #3172b9;
 }
 
-/* 
-+ 1) Contats - не закончил, сверить стили с роликом и закончить.
-+ 2) Сверить стили по Testimonals 
-+ 3) Добавить во флексы flex:wrap
-4) Сверить стили do__item-img
-*/
+
+/* Form */
+.form-section {
+  border-bottom: 1px solid #dadada;
+}
+
+.form-container {
+  padding-top: 120px;
+  padding-bottom: 118px;
+  
+  text-align: center;
+}
+
+.form__description {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #787878;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 58px;
+}
+
+.input,
+.btn-submit {
+  flex: 0 0 calc(25% - 15px);
+  height: 60px;
+  border-radius: 30px;
+}
+
+.input {
+  padding: 0 30px;
+  border: 1px solid #dadada;
+  border-radius: 30px;
+}
+
+.input::placeholder {
+  color: #787878;
+}
