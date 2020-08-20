@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Lionic</title>
 </head>
@@ -35,8 +36,6 @@
     </symbol> 
   </svg>
 
-
-
   <header class="header">
     <div class="container header-container">
       <a class="header__logo" href="/">
@@ -67,20 +66,22 @@
       <button class="header__btn btn">Free Trial</button>
     </div>
   </header>
-  
 
   <main class="main">
-
     <!-- First -->
     <section class="first-section">
       <div class="container first-section-container">
-        <h1 class="first__title">This is simply a smarter way to make your legal online</h1>
-        <p class="first__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-        <div class="first__action">
-          <button class="first__btn btn">Free 30 day trial</button>
-          <div class="first__secure">
-            <img class="first__secure-icon" src="assets/images/intro/Shield-icon.svg">
-            SSL secured connection</div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="first__title">This is simply a smarter way to make your legal online</h1>
+            <p class="first__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+            <div class="first__action">
+              <button class="first__btn btn">Free 30 day trial</button>
+              <div class="first__secure">
+                <img class="first__secure-icon" src="assets/images/intro/Shield-icon.svg">
+                SSL secured connection</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -90,29 +91,30 @@
       <div class="container do-container">
         <h2 class="do__title section-title">What We Do</h2>
         <p class="do__description section-description">Lionic guides you on making decisions for all aspects of your end-of-life plans.</p>
-        <ul class="do__list">
-          <li class="do__item">
+        
+        <ul class="do__list row">
+          <li class="col-lg-3">
             <svg class="do__item-img">
               <use xlink:href="#icon-1"></use>
             </svg>
             <h3 class="do__item-title">Your Legacy</h3>
             <p class="do__item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
           </li>
-          <li class="do__item">
+          <li class="col-lg-3">
             <svg class="do__item-img">
               <use xlink:href="#icon-2"></use>
             </svg>
             <h3 class="do__item-title">Your Health</h3>
             <p class="do__item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
           </li>
-          <li class="do__item">
+          <li class="col-lg-3">
             <svg class="do__item-img">
               <use xlink:href="#icon-3"></use>
             </svg>
             <h3 class="do__item-title">Funeral &amp; Memorial</h3>
             <p class="do__item-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
           </li>
-          <li class="do__item">
+          <li class="col-lg-3">
             <svg class="do__item-img">
               <use xlink:href="#icon-4"></use>
             </svg>
@@ -127,8 +129,9 @@
     <section class="testimonials-section">
       <div class="container testimonials-container">
         <h2 class="testimonials__title section-title">Our Happy Clients</h2>
-        <ul class="testimonials__list">
-          <li class="testimonials__item">
+        
+        <ul class="row">
+          <li class="col-lg-4">
             <p class="testimonials__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptate fuga incidunt id. Similique molestiae sapiente sequi laborum sit nihil officia saepe in, necessitatibus minima aliquid culpa vel, recusandae consectetur!</p>
             <div class="testimonials__user">
               <div class="testimonials__user-img">
@@ -140,7 +143,7 @@
               </div>
             </div>
           </li>
-          <li class="testimonials__item">
+          <li class="col-lg-4">
             <p class="testimonials__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptate fuga incidunt id. Similique molestiae sapiente sequi laborum sit nihil officia saepe in, necessitatibus minima aliquid culpa vel, recusandae consectetur!</p>
             <div class="testimonials__user">
               <div class="testimonials__user-img">
@@ -152,7 +155,7 @@
                 </div>
             </div>
           </li>
-          <li class="testimonials__item">
+          <li class="col-lg-4">
             <p class="testimonials__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptate fuga incidunt id. Similique molestiae sapiente sequi laborum sit nihil officia saepe in, necessitatibus minima aliquid culpa vel, recusandae consectetur!</p>
             <div class="testimonials__user">
               <div class="testimonials__user-img">
@@ -172,13 +175,14 @@
     <section class="contacts-section">
       <div class="container contacts-container">
         <h2 class="contacts__title section-title">Contacts</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
+        
+        <ul class="contacts__list row">
+          <li class="contacts__item col-lg-4">
             <img class="contacts__item-img" width="19" height="26" src="assets/images/contacts/gps.png">
             <h3 class="contacts__item-title">Visit Us</h3>
             <p class="contacts__item-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit.</p>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item col-lg-4">
             <img class="contacts__item-img" width="26" height="26" src="assets/images/contacts/phone.png">
             <h3 class="contacts__item-title">Call Us</h3>
             <div> 
@@ -188,7 +192,7 @@
               <a class="contacts__item-link" href="tel:+71234567890">+7 (123) 456-78-90</a>  
             </div>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item col-lg-4">
             <img class="contacts__item-img" width="29" height="19" src="assets/images/contacts/mail.png">
             <h3 class="contacts__item-title">Email Us</h3>
             <div>
@@ -219,7 +223,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-container">
       <div class="footer__left">
         <a href="/">
           <img src="assets/images/intro/Logo.svg" alt="Logo">
@@ -244,13 +248,19 @@
           </ul>
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link-twitter"></a>
+              <a href="#" class="social__link social__link-twitter">
+                <img src="assets/images/social/Twitter.svg" alt="">
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link-linkedin"></a>
+              <a href="#" class="social__link social__link-linkedin">
+                <img src="assets/images/social/Linkedin.svg" alt="">
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link-email"></a>
+              <a href="#" class="social__link social__link-email">
+                <img src="assets/images/social/Email.svg" alt="">
+              </a>
             </li>
           </ul>
         </nav>
